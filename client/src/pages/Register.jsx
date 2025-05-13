@@ -28,19 +28,19 @@ const Register = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100 dark:bg-gray-800">
+    <div className="min-h-screen flex items-center justify-center bg-gray-100 dark:bg-gray-900">
       <form
         onSubmit={handleSubmit}
-        className="bg-white dark:bg-gray-700 p-6 rounded shadow-md w-80"
+        className="bg-white dark:bg-gray-800 p-6 rounded shadow-md w-80"
       >
-        <h2 className="text-2xl font-bold mb-4 text-center text-gray-800 dark:text-gray-100">
+        <h2 className="text-2xl font-bold mb-4 text-center text-gray-900 dark:text-gray-100">
           Register
         </h2>
         <input
           name="name"
           type="text"
           placeholder="Name"
-          className="w-full p-2 border border-gray-300 dark:border-gray-600 rounded mb-2 focus:outline-none focus:ring-2 focus:ring-green-400 dark:focus:ring-green-500"
+          className="w-full p-2 border border-gray-300 dark:border-gray-700 rounded mb-2 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400"
           value={form.name}
           onChange={handleChange}
           required
@@ -49,7 +49,7 @@ const Register = () => {
           name="email"
           type="email"
           placeholder="Email"
-          className="w-full p-2 border border-gray-300 dark:border-gray-600 rounded mb-2 focus:outline-none focus:ring-2 focus:ring-green-400 dark:focus:ring-green-500"
+          className="w-full p-2 border border-gray-300 dark:border-gray-700 rounded mb-2 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400"
           value={form.email}
           onChange={handleChange}
           required
@@ -58,7 +58,7 @@ const Register = () => {
           name="password"
           type="password"
           placeholder="Password"
-          className="w-full p-2 border border-gray-300 dark:border-gray-600 rounded mb-4 focus:outline-none focus:ring-2 focus:ring-green-400 dark:focus:ring-green-500"
+          className="w-full p-2 border border-gray-300 dark:border-gray-700 rounded mb-2 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400"
           value={form.password}
           onChange={handleChange}
           required
